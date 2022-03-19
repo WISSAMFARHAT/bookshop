@@ -1,0 +1,146 @@
+:root
+{
+    --primary-text:#ffc2e8;
+    --bg-header:#f02159;
+    --primary-bg:#f0225b;
+    --primary-hover:#f80b4eec;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+header
+{
+
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    background-color: var(--bg-header);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 40px 0px;
+    transition: all 0.6s;
+}
+
+
+
+a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.font30
+{
+    font-size: 30px;
+}
+
+.fa
+{
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+
+.navRow
+{
+    width: 90%;
+    
+    align-self: flex-end;
+    padding: 10px;
+    transition: all 0.6s;
+    
+}
+
+
+.active,.navRow:hover
+{
+    background-color: white;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.active .fa,.navRow:hover .fa
+{
+    color: #001e28;
+}
+
+.active .font30,.navRow:hover .font30
+{
+    color: #001e28;
+}
+
+
+main
+{
+   margin-left: 250px;
+   transition: all 0.6s;
+  
+}
+
+main .head label
+{
+    margin-right: 20px;
+}
+
+
+main .head
+{
+    background: #fff;
+    padding: 0.3rem 1.5rem;
+    box-shadow: 2px 2px 5px rgb(0 0 0 / 20%);
+    width: calc(100% - 250px);
+    z-index: 100;
+    width: 100%;
+    transition: all 0.6s;
+    align-items: center; 
+    display: flex;
+    align-items: center;
+}
+
+main .head h1
+{
+    color: #001e28;
+}
+
+input[type=checkbox]
+{
+    display: none;
+}
+
+input[type=checkbox]:checked ~ #checked{
+    width: 50px;
+}
+
+input[type=checkbox]:checked ~ #checked h1,input[type=checkbox]:checked ~ #checked .navRow h4
+{
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ main
+{
+    margin-left: 50px;
+}
+
+
+.bg-white
+{
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 2px;
+    align-items: center;
+}
+
+.bg-white div em
+{
+    color: #001e28;
+}
+
+

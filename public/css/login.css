@@ -1,0 +1,62 @@
+.bg-login
+{
+    background-color: transparent;
+    padding: 7px;
+    border-radius: 25px;
+
+}
+
+.input
+{
+    padding: 2px;
+    width: 70%;
+    border:1px solid #fc5c94 ;
+    border-radius: 20px ;
+    margin: 0 auto;
+    position: relative;
+  
+}
+
+.input .fa-user,.input .fa-lock,.input .fa-eye
+{
+    color: #001e28;
+    position: relative;
+    width: 10%;
+}
+
+.fa-eye
+{
+    cursor: pointer;
+}
+.form-mail
+{
+    width: 85%;
+}
+.form-password
+{
+    width: 75%;
+}
+.form-mail,.form-password
+{
+    
+    border-radius: 20px;
+    background-color: transparent;
+    color: #001e28;
+    outline: none;
+    border: 0;
+    text-align-last: right;
+
+}
+
+.form-mail::placeholder,.form-password::placeholder
+{
+    color: #001e28;
+}
+
+
+.subnit
+{
+    background-color: #8c735a;
+    width: 70%;
+    color: #001e28;
+}

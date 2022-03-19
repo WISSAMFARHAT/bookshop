@@ -60,3 +60,18 @@ Route::get('/checkout',function(){
 
     return view('pages.checkout');
 })->name('checkout');
+
+
+
+Route::get("/login",function(){
+    return view('auth.login');
+})->name('auth_login');
+
+
+Route::group(['prefix'=>'admin'],function(){
+
+    Route::get("/",function(){
+        return view('admin.pages.home');
+    })->name('admin_home');
+
+});
